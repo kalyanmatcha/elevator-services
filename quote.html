@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get a lift quote | Vega Elevator Services, Hyderabad</title>
+  <meta name="description" content="Request a quote for a passenger, home, hospital, goods or glass lift in Hyderabad. Choose your finishes and send your enquiry on WhatsApp or email.">
+  <meta name="theme-color" content="#060A14">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/lift.css">
+</head>
+<body data-page="quote">
+
+  <header data-component="header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="crumbs"><a href="index.html">Home</a> / <a href="index.html#types">Elevators</a> / Get a quote</div>
+        <span class="eyebrow">Get a quote</span>
+        <h1>Tell us what you need.</h1>
+        <p class="lead">Choose your finishes, then send us the details. We call to book a site visit and send a clear written quote.</p>
+      </div>
+    </section>
+
+    <!-- Design tool -->
+    <section class="band" style="padding-top:28px">
+      <div class="wrap"><div data-designer></div></div>
+    </section>
+
+    <!-- Quote form -->
+    <section class="band band-light" id="quote">
+      <div class="wrap quote-layout">
+        <div class="quote-side">
+          <h2 id="quote-title">Get a quote</h2>
+          <p>Tell us a little about the building. We reply within <span data-bind="business.responseTime">24 hours</span>.</p>
+          <p class="fine">Nothing is stored on this website. Your enquiry goes straight to us by WhatsApp or email.</p>
+          <div class="chosen"><span>Your chosen design</span><strong id="chosen-design"></strong></div>
+        </div>
+
+        <form class="quote-box" id="quote-form" novalidate>
+          <div id="quote-fields" style="display:flex;flex-direction:column;gap:24px">
+            <div class="form-grid">
+              <div class="field"><label for="q-name">Full name</label><input class="input" id="q-name" type="text" autocomplete="name"></div>
+              <div class="field"><label for="q-phone">Phone number</label><input class="input" id="q-phone" type="tel" autocomplete="tel"></div>
+              <div class="field"><label for="q-type">Lift type</label><select class="input" id="q-type"></select></div>
+              <div class="field"><label for="q-building">Building type</label>
+                <select class="input" id="q-building">
+                  <option>Apartment</option><option>Office</option><option>Hospital</option><option>Retail or mall</option><option>Factory or warehouse</option><option>House or villa</option><option>Other</option>
+                </select></div>
+              <div class="field"><label for="q-stops">Number of floors (stops)</label><input class="input" id="q-stops" type="number" min="2"></div>
+              <div class="field"><label for="q-cap">Capacity (persons)</label><input class="input" id="q-cap" type="number" min="1"></div>
+            </div>
+            <div class="field"><label for="q-notes">Anything else we should know?</label><textarea class="input" id="q-notes" rows="4"></textarea></div>
+            <div class="form-error" id="form-error" role="alert"></div>
+            <div class="form-actions">
+              <button class="btn" type="button" id="send-whatsapp">Send on WhatsApp</button>
+              <button class="btn btn-outline-ink" type="button" id="send-email">Send by email</button>
+            </div>
+          </div>
+          <div class="thanks" id="quote-thanks" hidden>
+            <h3>Thank you. Your enquiry is ready to send.</h3>
+            <p>Your WhatsApp or email app has opened with the details filled in. Press send and we reply within <span data-bind="business.responseTime">24 hours</span>.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="split">
+          <h2>What you can configure</h2>
+          <div class="facts" id="facts"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-alt">
+      <div class="wrap">
+        <div class="split">
+          <h2>Common questions</h2>
+          <div class="faq" id="faq"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-component="footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/parts-data.js"></script>
+  <script src="assets/js/scenes.js"></script>
+  <script src="assets/js/part-art.js"></script>
+  <script src="assets/js/lift.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Page title and description: these are what Google shows in search results. Edit them. -->
+  <title>Vega Elevator Services | Lift installation, maintenance and parts in Hyderabad</title>
+  <meta name="description" content="Vega Elevator Services installs, modernises and maintains passenger, home, hospital, goods and glass lifts in Hyderabad, and supplies lift spare parts.">
+  <meta property="og:title" content="Vega Elevator Services">
+  <meta property="og:description" content="Lift installation, maintenance and parts in Hyderabad.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#060A14">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/lift.css">
+</head>
+<body data-page="home">
+
+  <header data-component="header"></header>
+
+  <main>
+    <!-- Opening story: the lift doors open as you scroll -->
+    <section class="story" id="top">
+      <div class="story-stage">
+        <div class="wrap story-grid">
+          <div class="story-copy">
+            <h1 data-bind="business.tagline">Lifts you can rely on.</h1>
+            <p class="lead" data-bind="business.intro"></p>
+            <div class="hero-services">
+              <span>Services we offer:</span>
+              <div class="chips" id="chips"></div>
+            </div>
+          </div>
+          <div class="story-lift"><div class="story-lift-box"><div data-story-lift></div></div></div>
+        </div>
+        <span class="story-hint">Scroll</span>
+      </div>
+    </section>
+
+    <!-- Lift types -->
+    <section class="band band-light" id="types">
+      <div class="wrap">
+        <div class="band-head">
+          <h2>The right lift for every need.</h2>
+          <p class="lead">Five lift types cover almost every project in Hyderabad. Each has its own quote form.</p>
+        </div>
+      </div>
+      <div class="rail-wrap">
+        <div class="rail" id="type-rail"></div>
+        <div class="rail-nav">
+          <button class="rail-btn" id="rail-prev" type="button" aria-label="Previous lift type">&#8249;</button>
+          <button class="rail-btn" id="rail-next" type="button" aria-label="Next lift type">&#8250;</button>
+        </div>
+      </div>
+      <div class="wrap"><p class="fine" style="text-align:center;margin-top:20px">* Indicative equipment prices before GST. Final price depends on floors, capacity, shaft condition and finish.</p></div>
+    </section>
+
+    <!-- Parts -->
+    <section class="band" id="parts">
+      <div class="wrap">
+        <div class="band-head">
+          <h2>Genuine parts, ready to ship.</h2>
+          <p class="lead">Controllers, door operators, cables, governors and more, for lifts of most makes.</p>
+        </div>
+        <div class="part-grid" id="parts-preview"></div>
+        <div class="band-foot">
+          <a class="btn btn-sm" href="parts.html">See the full catalogue</a>
+          <p class="fine">Indicative prices before GST. Availability and final price confirmed on enquiry.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design your lift -->
+    <section class="band band-alt" id="design">
+      <div class="wrap">
+        <div class="band-head">
+          <span class="eyebrow">Design your lift</span>
+          <h2>Choose the doors outside. Choose the cabin inside.</h2>
+          <p class="lead">Pick a finish for the landing doors and another for the cabin. The lift updates as you choose.</p>
+        </div>
+        <div data-designer data-with-cta="true"></div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="band" id="why">
+      <div class="wrap">
+        <div class="band-head">
+          <span class="eyebrow">Why Vega</span>
+          <h2>Why buildings trust us.</h2>
+          <p class="lead">Lifts carry people, so we are strict about safety, honest about price and quick to respond.</p>
+        </div>
+        <div class="why-points" id="why-points"></div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- Numbers -->
+    <section class="stats-band" aria-label="Vega in numbers">
+      <div class="wrap"><div class="stats" id="stats"></div></div>
+    </section>
+
+    <!-- Brands we serve -->
+    <section class="brands" aria-label="Brands we serve">
+      <div class="brands-label">Brands we proudly serve</div>
+      <div class="brands-mask"><div class="brands-track" id="brand-track"></div></div>
+    </section>
+
+    <!-- Contact (blue band, built by site.js) -->
+    <section data-component="contact"></section>
+  </main>
+
+  <footer data-component="footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/parts-data.js"></script>
+  <script src="assets/js/scenes.js"></script>
+  <script src="assets/js/part-art.js"></script>
+  <script src="assets/js/lift.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

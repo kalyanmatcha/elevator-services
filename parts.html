@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lift spare parts catalogue | Vega Elevator Services, Hyderabad</title>
+  <meta name="description" content="Browse lift spare parts: governors, door operators, controllers, cables, motors and panels. Enquire on WhatsApp. Vega Elevator Services, Hyderabad.">
+  <meta name="theme-color" content="#060A14">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/lift.css">
+</head>
+<body data-page="parts">
+
+  <header data-component="header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">Parts catalogue</span>
+        <h1>Parts for installation, servicing and replacement.</h1>
+        <p class="lead">Search by part or category. Prices are indicative, and we confirm availability and the exact part for your lift when you enquire.</p>
+      </div>
+    </section>
+
+    <section class="band" style="padding-top:28px">
+      <div class="wrap">
+        <div class="toolbar">
+          <div class="field">
+            <label for="part-search">Search parts</label>
+            <input class="input" id="part-search" type="search" placeholder="Governor, door operator, cable">
+          </div>
+          <div class="cat-row" id="cat-row" role="group" aria-label="Categories"></div>
+        </div>
+        <div class="fine" id="parts-count" style="margin-bottom:20px;text-align:center"></div>
+        <div class="part-grid" id="parts-grid"></div>
+        <div class="empty" id="parts-empty" hidden>
+          <h3>No match for that search.</h3>
+          <p class="lead">We stock and source more than we list. Tell us what you need and we will find it.</p>
+          <a class="btn btn-sm" data-href="https://wa.me/{business.whatsapp}" target="_blank" rel="noopener">Ask for a part</a>
+        </div>
+        <p class="fine" style="margin-top:32px;text-align:center">Indicative prices before GST. Prices change with make, rating and availability. We confirm the final price on enquiry.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer data-component="footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/parts-data.js"></script>
+  <script src="assets/js/scenes.js"></script>
+  <script src="assets/js/part-art.js"></script>
+  <script src="assets/js/lift.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
